@@ -14,8 +14,7 @@ class PlayState extends FlxState
 		super.create();
 
 		displays = [new MoneyDisplay(this), new LemonDisplay(this),];
-		displays[0]._textField.y = 10;
-		displays[1]._textField.y = 20;
+		displays[1]._textField.y = 16;
 	}
 
 	override public function update(elapsed:Float)
