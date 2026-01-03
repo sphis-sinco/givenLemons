@@ -14,11 +14,17 @@ class SaveField
 
 	public function get():Dynamic
 	{
+		if (!FlxG.save.isBound)
+			return null;
+
 		return Reflect.field(FlxG.save.data, this._field);
 	}
 
 	public function set(value:Dynamic)
 	{
+		if (!FlxG.save.isBound)
+			return null;
+        
 		Reflect.setField(FlxG.save.data, this._field, value);
 	}
 }
