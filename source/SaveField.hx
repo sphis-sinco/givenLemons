@@ -25,6 +25,6 @@ class SaveField
 		if (!FlxG.save.isBound)
 			return null;
         
-		Reflect.setField(FlxG.save.data, this._field, value);
+		return Reflect.setField(FlxG.save.data, this._field, value);
 	}
 }
