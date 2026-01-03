@@ -12,9 +12,6 @@ class InitState extends FlxState
 
 		FlxG.save.bind('Gimon', Application.current.meta.get('company'));
 
-		FlxG.save.data.money ??= 0.0;
-		FlxG.save.data.lemons ??= 0;
-
 		FlxG.switchState(() -> new PlayState());
 	}
 }
